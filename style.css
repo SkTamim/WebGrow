@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+:root{
+    --prymary-color:#e03a3c;
+    --prymary-bg:#1b1b1b;
+}
+
+
+/*=================================================================
+                            NavBar Start 
+=====================================================================*/
+nav{
+    background: #fff;
+    padding: 1.8rem 7rem;
+    width: 100%;
+}
+nav .logo{
+    font-size: 3rem;
+    font-weight: 600;
+}
+nav .logo span{
+  color: var(--prymary-color);
+}
+.navContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.navContent .menu> ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu ul li a{
+    padding: 1rem 1.5rem;
+    transition: 0.3s;
+}
+.menu ul li a:hover{
+    color: var(--prymary-color);
+}
+.menu >ul .navContact{
+    background: var(--prymary-color);
+    color: #fff !important;
+    padding: 0.7rem 2rem;
+    margin: 0.3rem;
+    border-radius: 0.4rem;
+    transition: 0.5s;
+}
+.menu >ul .navContact:hover{
+    background: var(--prymary-bg);
+}
+.menuIcon{
+    font-size: 2rem;
+    border: 0.2rem solid black;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.2rem;
+    transition: 0.1s;
+    user-select: none;
+    z-index: 999;
+}
+.menuIcon:active{
+    background: #e03a3db2;
+}
+.fa-times{
+    font-size: 2.2rem;
+    padding: 0.3rem 0.15rem;
+}
+.rotationAnime{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+/* Dropdown List  */
+.fa-chevron-down{
+    position: relative;
+    top: 2px;
+}
+#dropdown ul{
+    list-style: none;
+    width: 15rem;
+    position: absolute;
+    top: 6rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    display: none;
+    animation: dropdownAnime 0.5s 1 alternate;
+    z-index: 1;
+}
+li#dropdown a {
+    padding: 2rem 1.5rem;
+}
+#dropdown:hover > ul{
+    display: block;
+}
+#dropdown ul li a{
+    display: block;
+    padding: 1rem 2rem;
+}
+
+@keyframes dropdownAnime {
+    0%{
+        top: 10rem;
+    }
+    100%{
+        top: 6rem;
+    }
+}
+
+ /* Menu for Mobile Display  */
+ .mobileMenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: none;
+    z-index: 99;
+ }
+ .mobileMenu ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+/* Mobile Nav Bar Animation */
+ .mobileMenu ul li{
+    animation: mobileNavAnime 0.5s 1 forwards;
+     margin-left: -400rem;
+ }
+ .mobileMenu ul li:nth-child(2){
+    animation: mobileNavAnime 0.5s 1 0.2s forwards;
+ }
+ .mobileMenu ul li:nth-child(3){
+    animation: mobileNavAnime 0.5s 1 0.3s forwards;
+ }
+ .mobileMenu ul li:nth-child(4){
+    animation: mobileNavAnime 0.5s 1 0.4s forwards;
+ }
+ .mobileMenu ul li:nth-child(5){
+    animation: mobileNavAnime 0.5s 1 0.5s forwards;
+ }
+ .mobileMenu ul li:nth-child(6){
+    animation: mobileNavAnime 0.5s 1 0.6s forwards;
+ }
+ .mobileMenu ul li:nth-child(7){
+    animation: mobileNavAnime 0.5s 1 0.7s forwards;
+ }
+ .mobileMenu ul li:nth-child(8){
+    animation: mobileNavAnime 0.5s 1 0.8s forwards;
+ }
+ .mobileMenu ul li a{
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+    font-size: 2rem;
+ }
+ .mobileMenu ul li a:hover{
+    color: var(--prymary-color);
+
+}
+
+/* Mobile Dropdown Menu */
+#mobileDropdown ul{
+    list-style: none;
+    width: 16rem;
+    height: max-content;
+    background: #fff;
+    border-radius: 0.3rem;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    display: none;
+}
+#mobileDropdown ul li a{
+    padding: 1.5rem 3rem;
+}
+#mobileDropdown:hover > ul{
+ display: block;
+}
+li#mobileDropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Animation code for Mobile Nav Bar */
+@keyframes mobileNavAnime {
+    0%{
+        margin-left: -400rem;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+
+/* Responsive Code of NavBar */
+@media screen and (min-width:1020px) {
+    .menuIcon{
+        display: none;
+    }
+}
+@media screen and (max-width:1020px) {
+    .menu{
+        display: none;
+    }
+    html{
+        font-size: 55%;
+    }
+    nav{
+        padding: 1.8rem 3rem;
+    }
+}
+/*=================================================================
+                            NavBar End 
+=====================================================================*/
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* =================================================================
+                            Hero Area Start
+===================================================================== */
+#heroArea{
+    background: url(assets/img/hero-bg.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+}
+#heroArea::before{
+    content: '';
+    background: rgba(0, 0, 0, 0.575);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#heroArea div{
+    color: #fff;
+    position: relative;
+    width: 70rem;
+    padding: 8rem 10rem;
+}
+.mainHeading{
+    font-size: 4.5rem;
+    padding: 1rem 0;
+}
+.tagLine{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.headerButton {
+    background: var(--prymary-color);
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1.5rem 3.5rem;
+    display: block;
+    margin-top: 3rem;
+    width: fit-content;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+    border: 0.2rem solid transparent;
+}
+.headerButton:hover{
+    background: transparent;
+    border: 0.2rem solid #fff;
+}
+
+/* Responsive Code for Hero area */
+@media screen and (max-width:716px) {
+    #heroArea div{
+        width: 100%;
+        padding: 5rem;
+        text-align: center;
+    }
+    .tagLine{
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+    .mainHeading{
+        font-size: 3.5rem;
+        padding: 2rem 0;
+    }
+    .headerButton{
+        margin: 5rem auto;
+    }
+}
+/* =================================================================
+                            Hero Area End
+===================================================================== */
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/*====================================================================
+                            Clients Section Start
+======================================================================== */
+#clients{
+    margin: 6rem;
+    margin-bottom: 10rem;
+}
+.clients .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+width: 12px;
+height: 12px;
+background-color: #fff;
+opacity: 1;
+border: 1px solid var(--prymary-color);
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+background-color: var(--prymary-color);
+}
+
+.clients .swiper-slide img {
+opacity: 0.5;
+transition: 0.3s;
+filter: grayscale(100);
+}
+
+.clients .swiper-slide img:hover {
+opacity: 1;
+filter: none;
+}
+
+/* Responsivse code for Client area */
+@media screen and (max-width:516px) {
+#clients{
+    margin: 6rem 3rem;
+}
+}
+
+/*====================================================================
+                            Clients Section End
+========================================================================*/
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* =======================================================================
+     About Us Section Start 
+========================================================================= */
+#about_us {
+    background: var(--prymary-bg);
+    height: 40rem;
+    width: 120%;
+    margin: 0 -2rem;
+    transform: rotate(357deg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner_about{
+    transform: rotate(2deg);
+    display: flex;
+    align-items: center;
+}
+.about_description{
+    width: 35%;
+    margin:0 8rem;
+}
+.about_description h1{
+    font-size: 3rem;
+}
+.about_description p{
+    font-size: 1.5rem;
+}
+.about_points{
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+}
+/* =======================================================================
+     About Us Section End 
+========================================================================= */
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/*=================================================================
+                            Utility Classes 
+=====================================================================*/
+.active{
+    color: var(--prymary-color);
+}
+.img-fluid{
+    max-width: 100%;
+}

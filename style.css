@@ -363,33 +363,69 @@ filter: none;
 ========================================================================= */
 #about_us {
     background: var(--prymary-bg);
-    height: 40rem;
+    height: 55rem;
     width: 120%;
     margin: 0 -2rem;
     transform: rotate(357deg);
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .inner_about{
-    transform: rotate(2deg);
+    transform: rotate(3deg);
     display: flex;
     align-items: center;
 }
-.about_description{
-    width: 35%;
-    margin:0 8rem;
+.about_description {
+    width: 55rem;
+    margin: 0 8rem;
+    margin-right: 5rem;
 }
 .about_description h1{
     font-size: 3rem;
 }
 .about_description p{
     font-size: 1.5rem;
+    padding: 2rem 0;
+    color: rgba(238, 238, 238, 0.829);
+}
+.about_description a {
+    color: #fff;
+    font-size: 1.5rem;
+    border: 2px solid var(--prymary-color);
+    display: block;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+    transition: 0.5s;
+}
+.about_description a:hover{
+background: var(--prymary-color);
+}
+.about_description a i {
+    font-size: 1.4rem;
+    padding: 0 0.6rem 0 1.1rem;
+}
+.point {
+    margin:2rem 1rem;
 }
 .about_points{
     display: grid;
-    grid-template-columns: 25rem 25rem;
+    grid-template-columns: 28rem 28rem;
+}
+.point i {
+    font-size: 3rem;
+    color: var(--prymary-color);
+    padding: 1rem 0px;
+}
+.point h1 {
+    font-size: 2rem;
+    padding: 0.6rem 0;
+}
+.point p {
+    font-size: 1.4rem;
+    color: rgba(238, 238, 238, 0.637);
 }
 /* =======================================================================
      About Us Section End 

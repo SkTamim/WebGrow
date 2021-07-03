@@ -276,6 +276,7 @@ li#mobileDropdown {
     display: block;
     margin-top: 3rem;
     width: fit-content;
+    width: -moz-fit-content;
     border-radius: 0.3rem;
     transition: 0.3s;
     border: 0.2rem solid transparent;
@@ -361,25 +362,19 @@ filter: none;
 /* =======================================================================
      About Us Section Start 
 ========================================================================= */
-#about_us {
+ #about_us {
     background: var(--prymary-bg);
-    height: 55rem;
-    width: 120%;
-    margin: 0 -2rem;
-    transform: rotate(357deg);
     color: #fff;
+    /* clip-path: polygon(0 21%, 100% 0%, 100% 82%, 0% 100%); */
+    clip-path: polygon(0 11%, 100% 0%, 100% 89%, 0% 100%);
     display: flex;
-    align-items: center;
-}
-.inner_about{
-    transform: rotate(3deg);
-    display: flex;
-    align-items: center;
+    padding: 3rem 0;
+    width: 100%;
 }
 .about_description {
-    width: 55rem;
-    margin: 0 8rem;
-    margin-right: 5rem;
+    margin: 6rem;
+    margin-bottom: 3rem;
+    width: 115rem;
 }
 .about_description h1{
     font-size: 3rem;
@@ -395,6 +390,7 @@ filter: none;
     border: 2px solid var(--prymary-color);
     display: block;
     width: fit-content;
+    width: -moz-fit-content;
     border-radius: 2rem;
     padding: 0.5rem 2rem;
     margin: 1rem 0;
@@ -408,11 +404,10 @@ background: var(--prymary-color);
     padding: 0 0.6rem 0 1.1rem;
 }
 .point {
-    margin:2rem 1rem;
+    margin:2rem;
 }
 .about_points{
-    display: grid;
-    grid-template-columns: 28rem 28rem;
+    display: flex;
 }
 .point i {
     font-size: 3rem;
@@ -426,6 +421,34 @@ background: var(--prymary-color);
 .point p {
     font-size: 1.4rem;
     color: rgba(238, 238, 238, 0.637);
+} 
+
+/* Responsive code for Aboout Us Section */
+@media screen and (max-width:935px) {
+    #about_us {
+        flex-wrap: wrap;
+    }
+    .about_points{
+        margin: 0 4rem;
+        padding-bottom: 3rem;
+    }
+    .about_description{
+        padding-top: 4rem;
+        margin-left:2rem ;
+        margin-right: 2rem;
+    }
+    .about_description h1{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:585px) {
+    .about_points{
+        flex-wrap: wrap;
+        margin: 0 2rem;
+    }
+    .secont_col{
+        padding-bottom: 3rem;
+    }
 }
 /* =======================================================================
      About Us Section End 

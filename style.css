@@ -232,13 +232,12 @@ li#mobileDropdown {
                             NavBar End 
 =====================================================================*/
 
-/* ----------------------------------------------------------------------------------------------- */
 
 /* =================================================================
                             Hero Area Start
 ===================================================================== */
 #heroArea{
-    background: url(assets/img/hero-bg.jpg) no-repeat center center/cover;
+    background: url(assets/img/hero-bg-3.jpg) no-repeat center center/cover;
     background-attachment: fixed;
     height: 100%;
     position: relative;
@@ -262,6 +261,9 @@ li#mobileDropdown {
 .mainHeading{
     font-size: 4.5rem;
     padding: 1rem 0;
+}
+.mainHeading .webText{
+    color: var(--prymary-color);
 }
 .tagLine{
     font-size: 2.3rem;
@@ -315,8 +317,13 @@ li#mobileDropdown {
                             Clients Section Start
 ======================================================================== */
 #clients{
-    margin: 6rem;
-    margin-bottom: 3rem;
+    margin: 3rem 6rem;
+}
+.client_heading{
+    font-size: 3.5rem;
+    color: var(--prymary-color);
+    text-align: center;
+    padding-bottom: 2rem;
 }
 .clients .swiper-pagination {
     margin-top: 20px;
@@ -405,6 +412,7 @@ background: var(--prymary-color);
 }
 .point {
     margin:2rem;
+    padding-bottom: 2rem;
 }
 .about_points{
     display: flex;

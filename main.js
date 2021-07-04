@@ -44,7 +44,7 @@ chengeIcon.classList.toggle("fa-times");
         spaceBetween: 80
       },
       992: {
-        slidesPerView: 6,
+        slidesPerView: 5,
         spaceBetween: 120
       }
     }

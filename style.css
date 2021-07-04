@@ -316,7 +316,7 @@ li#mobileDropdown {
 ======================================================================== */
 #clients{
     margin: 6rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 .clients .swiper-pagination {
     margin-top: 20px;
@@ -349,7 +349,7 @@ filter: none;
 /* Responsivse code for Client area */
 @media screen and (max-width:516px) {
 #clients{
-    margin: 6rem 3rem;
+    margin:3rem;
 }
 }
 
@@ -426,14 +426,16 @@ background: var(--prymary-color);
 /* Responsive code for Aboout Us Section */
 @media screen and (max-width:935px) {
     #about_us {
+        clip-path: polygon(0 6%, 100% 0%, 100% 93%, 0 100%);
         flex-wrap: wrap;
+        padding-top: 0;
     }
     .about_points{
         margin: 0 4rem;
         padding-bottom: 3rem;
     }
     .about_description{
-        padding-top: 4rem;
+        padding-top: 2rem;
         margin-left:2rem ;
         margin-right: 2rem;
     }
@@ -442,12 +444,15 @@ background: var(--prymary-color);
     }
 }
 @media screen and (max-width:585px) {
+    #about_us {
+        clip-path: polygon(0 4%, 100% 1%, 100% 96%, 0 99%);
+    }
     .about_points{
         flex-wrap: wrap;
         margin: 0 2rem;
     }
     .secont_col{
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
     }
 }
 /* =======================================================================

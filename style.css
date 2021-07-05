@@ -468,9 +468,56 @@ background: var(--prymary-color);
 ========================================================================= */
 
 
+/*============================================================================
+                                Counter section Start 
+================================================================================*/
+#counter{
+    margin: 6rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.counter_div{
+    width: 26rem;
+    background: #fff;
+    padding: 3rem 5rem;
+    margin: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 2px 35px rgb(0 0 0 / 10%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.counter_icon{  
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    color: var(--prymary-color);
+    position: absolute;
+    top: -2rem;
+    border: 2px solid #fff;
+    box-shadow: 0px 2px 25px rgb(0 0 0 / 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.counter_number{
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.counter_name{
+    text-align: center;
+}
+
+/*============================================================================
+                                Counter section End 
+================================================================================*/
 
 
-/* --------------------------------------------------------------------------------------------- */
 
 /*=================================================================
                             Utility Classes 

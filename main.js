@@ -49,3 +49,8 @@ chengeIcon.classList.toggle("fa-times");
       }
     }
   });
+
+  // Counter Up Plugin in Client counting area
+  $('.counter').counterUp({
+    time: 1000
+});

@@ -518,6 +518,133 @@ background: var(--prymary-color);
 ================================================================================*/
 
 
+/* ============================================================================
+                                Tab about section Start 
+================================================================================ */
+#tabAbout{
+    margin: 5rem 0;
+}
+.allTabButtons{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.tabButton{
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    width: 31rem;
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+    color: #8a8a8a;
+}
+.tabButton i{
+padding: 0 2rem 0 0;
+font-size: 3rem;
+}
+.tabButton:hover{
+    color: var(--prymary-color);
+    border: 2px solid var(--prymary-color);
+}
+.activeTab{
+    background: var(--prymary-color);
+    color: #fff !important;
+    border: 2px solid var(--prymary-bg) !important;
+}
+
+/* Resposive code for Tab buttons */
+@media screen and (max-width:864px) {
+    .tabButton{
+        font-size: 1.6rem;
+        padding: 2rem 1rem;
+        width: fit-content;
+    }
+    .tabButton i{
+    font-size: 2rem;
+    }
+}
+@media screen and (max-width:680px) {
+    .tabButton{
+        flex-direction: column;
+    }
+    .tabButton span{
+        text-align: center;
+    }
+    .tabButton i{
+    padding: 0 0 1rem 0;
+    }
+}
+@media screen and (max-width:443px) {
+    .tabButton{
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Tab content */
+.tabContent{
+    margin: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.tabContent div:nth-child(1){
+    width: 55%;
+}
+.tabHeading{
+    font-size: 3rem;
+    color: var(--prymary-color);
+}
+.tabSubHeading{
+    font-size: 1.3rem;
+    color: rgb(197, 197, 197);
+    padding-bottom: 1rem;
+}
+.tabPoint{
+    font-size: 1.8rem;
+    color: #8a8a8a;
+}
+.tabPoint i{
+    color: var(--prymary-color);
+}
+.tabDescription{
+    color: #8a8a8a;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+.tabImage{
+    height: 45rem;
+}
+
+/* Resposive code for Tab content */
+@media screen and (max-width:863px) {
+    .tabContent{
+        flex-direction: column;
+    }
+    .tabContent div:nth-child(1){
+        width: 100%;
+    }
+    .tabImage{
+        height: 100%;
+        width: 100%;
+    }
+}
+/* ============================================================================
+                                Tab about section End 
+================================================================================ */
+
+
+
+
+
+
+
 
 /*=================================================================
                             Utility Classes 

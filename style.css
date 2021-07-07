@@ -640,6 +640,121 @@ font-size: 3rem;
 ================================================================================ */
 
 
+/* ============================================================================
+                                Services Section Start 
+================================================================================ */
+#services{
+position: relative;
+color: #fff;
+margin: 10rem 0;
+}
+.servicesBefore::before{
+    content: "";
+    background: #1b1b1b;
+    position: absolute;
+    bottom: 60px;
+    top: -3rem;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+    z-index: -1;
+    height: 110%;
+}
+.services_heading{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.services_heading::after{
+    content: "";
+    background: var(--prymary-color);
+    height: 0.3rem;
+    width: 4.5rem;
+    position: absolute;
+    top: 5rem;
+    left: 48%;
+}
+.services_para{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
+}
+.serviceBoxContainer{
+    display: flex;
+    margin: 0 5rem;
+}
+.serviceBoxContainer .serviceBox{
+    margin: 1rem;
+    padding:3rem;
+    background: #eee;
+    border-radius: 0.5rem;
+    display: flex;
+    background: #313131;
+}
+.serviceBox i{
+    font-size: 5rem;
+    padding: 0.5rem 2rem 0 0;
+    color: var(--prymary-color);
+}
+.serviceBox h2{
+    font-size: 1.7rem;
+}
+.serviceBox p{
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+.serviceBoxButton{
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5rem;
+    transition: 0.3s;
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-left: -0.4rem;
+    color: #fff;
+}
+.serviceBoxButton i {
+    font-size: 1.2rem;
+    padding: 0 0 0 0.5rem;
+    color: #fff;
+}
+.serviceBoxButton:hover {
+    background: var(--prymary-color);
+    color: #fff;
+}
+
+
+/* Responsive Code for Services section */
+@media screen and (max-width:843px) {
+    .serviceBoxContainer {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:633px) {
+    .servicesBefore::before{
+        height: 105%;
+    }
+    .services_heading::after{
+        left: 45%;
+    }
+    .serviceBox{
+        flex-direction: column;
+    }
+    .serviceBox >i{
+        padding-bottom: 2rem;
+    }
+    .serviceBoxContainer{
+        margin: 0 3rem;
+    }
+}
+/* ============================================================================
+                                Services Section End 
+================================================================================ */
+
 
 
 

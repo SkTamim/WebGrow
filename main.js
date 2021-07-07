@@ -55,7 +55,7 @@ $('.counter').counterUp({
   time: 1000
 });
 
-// Tab About Section 
+// Tab About Section Start
 let tabButton = document.querySelectorAll(".tabButton");
 
 tabButton.forEach(function (value, index, array) {
@@ -134,9 +134,9 @@ tabButton.forEach(function (value, index, array) {
 
       tabImage.src = "assets/img/tab/tab1.png";
     }
-
-    
+ 
   });
 });
+// Tab About Section End
 
 

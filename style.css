@@ -670,10 +670,10 @@ margin: 10rem 0;
     content: "";
     background: var(--prymary-color);
     height: 0.3rem;
-    width: 4.5rem;
+    width: 5rem;
     position: absolute;
     top: 5rem;
-    left: 48%;
+    left: calc(50% - 25px);
 }
 .services_para{
     text-align: center;
@@ -738,9 +738,6 @@ margin: 10rem 0;
     .servicesBefore::before{
         height: 105%;
     }
-    .services_heading::after{
-        left: 45%;
-    }
     .serviceBox{
         flex-direction: column;
     }
@@ -754,6 +751,122 @@ margin: 10rem 0;
 /* ============================================================================
                                 Services Section End 
 ================================================================================ */
+
+
+/* <!-- ============================================================================
+                                Portfolio Section Start 
+=================================================================================--> */
+#portfolio{
+    margin: 7rem;
+    padding: 4rem 0;
+}
+.portfolio_heading{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(90, 90, 90);
+}
+.portfolio_para{
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgb(105, 105, 105);
+}
+
+/* Filter elements styling */
+.filter_container{
+    margin: 2rem 0;
+}
+.filter_button_container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.filter_button{
+    padding: 1rem 1.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 0.4rem;
+    border: 0.5px solid rgb(90, 90, 90);
+    background: #fff;
+    color: rgb(90, 90, 90);
+    transition: 0.3s;
+}
+.filter_button:hover{
+    background: var(--prymary-color);
+    color: #fff;
+}
+.filter_items{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+    overflow-y: hidden;
+}
+.portfolio-wrap{
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.portfolio-wrap::before {
+    content: "";
+    background: rgba(17, 17, 17, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+ }
+ .portfolio-wrap img {
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-wrap .portfolio_description {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    margin: 3rem;
+}
+.portfolio-wrap:hover .portfolio_description {
+    opacity: 1;
+}
+ .portfolio-wrap:hover::before {
+    opacity: 1;
+}
+ .portfolio-wrap:hover img {
+    transform: scale(1.2) rotate(-35deg);
+}
+.portfolio-wrap .portfolio_description h4 {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 2rem;
+}
+ .portfolio-wrap .portfolio_description p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
+}
+.portfolio-wrap .portfolio_link {
+    z-index: 4;
+    font-size: 1.5rem;
+}
+.portfolio-wrap .portfolio_link a{
+    margin: 0 1rem 0 0;
+    color: rgba(207, 207, 207, 0.589);
+    transition: 0.2s;
+}
+.portfolio-wrap .portfolio_link a:hover{
+    color: rgb(236, 236, 236);
+}
+/*============================================================================
+                                Portfolio Section End 
+================================================================================= */
 
 
 

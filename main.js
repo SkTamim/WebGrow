@@ -140,3 +140,28 @@ tabButton.forEach(function (value, index, array) {
 // Tab About Section End
 
 
+// MixitUp Plugin for filter portfolio section 
+var containerEl = document.querySelector('.filter_items');
+
+var mixer = mixitup(containerEl, {
+  selectors: {
+      target: '.mix'
+  },
+  animation: {
+      duration: 300
+  }
+});
+
+// Magnifig PopUp Plugin for filter portfolio images zoom efect
+$(document).ready(function() {
+  $('.filter_items').magnificPopup({
+    delegate: 'a.filter_image',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+
+
+

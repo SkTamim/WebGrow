@@ -759,6 +759,7 @@ margin: 10rem 0;
 #portfolio{
     margin: 7rem;
     padding: 4rem 0;
+    margin-bottom: 0;
 }
 .portfolio_heading{
     font-size: 3rem;
@@ -913,6 +914,105 @@ margin: 10rem 0;
                                 Portfolio Section End 
 ================================================================================= */
 
+
+/* ============================================================================
+                                Testimonials Section Start 
+================================================================================= */
+#testimonial{
+    margin: 0 5rem;
+}
+.testimonial_heading{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    
+}
+.testimonial_heading::after{
+    content: "";
+    background: var(--prymary-color);
+    height: 0.3rem;
+    width: 5rem;
+    position: absolute;
+    top: 5rem;
+    left: calc(50% - 25px);
+}
+.testimonial_heading{
+    color: rgb(53, 53, 53);
+}
+.testimonial_para{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: rgb(99, 99, 99);
+}
+.testimonial_slider{
+    margin:5rem  3rem;
+}
+.testimonial-item{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.5rem;
+    margin: 0 2rem;
+    user-select: none;
+}
+.testimonial_item_header{
+    display: flex;
+    align-items: center;
+}
+.testimonial-item img{
+    height: 10rem;
+    margin: 1rem 3rem;
+    border-radius: 0.7rem;
+}
+.testimonial_name{
+ font-size: 2rem;
+ 
+}
+.testimonial_position{
+    font-size: 1.6rem;
+    color: rgb(163, 163, 163);
+}
+.tetimonial_quote{
+    font-size: 1.5rem;
+    color: rgb(116, 116, 116);
+    padding: 1rem 3rem;
+}
+.tetimonial_quote i{
+    font-size: 2rem;
+}
+
+/* for swiper plugin */
+.swiper-container{
+    overflow: visible;
+}
+#testimonial .swiper-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid var(--prymary-color);
+}
+#testimonial .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--prymary-color);
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+}
+
+/* Responsive code for testimonial section */
+@media screen and (max-width:484px) {
+    .testimonial_item_header{
+        flex-direction: column;
+    }
+    .testimonial-item{
+    margin-right: -1rem;
+    width: 80vw;
+    }
+}
+/* ============================================================================
+                                Testimonials Section End 
+================================================================================= */
 
 
 

@@ -16,7 +16,6 @@ menuIcon.addEventListener("click", () => {
 // Menu Button Functioning End
 
 // Swiper JS Slider inisializition for Client area 
-
 new Swiper('.clients-slider', {
   speed: 400,
   loop: true,

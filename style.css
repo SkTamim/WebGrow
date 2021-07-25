@@ -945,11 +945,17 @@ margin: 10rem 0;
     margin: 3rem 0;
     color: rgb(99, 99, 99);
 }
+.testimonial_para_for_mobile{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: rgb(99, 99, 99);
+    display: none;
+}
 .testimonial_slider{
     margin:5rem  3rem;
 }
 .testimonial-item{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 0.5rem;
     margin: 0 2rem;
     user-select: none;
@@ -974,16 +980,13 @@ margin: 10rem 0;
 .tetimonial_quote{
     font-size: 1.5rem;
     color: rgb(116, 116, 116);
-    padding: 1rem 3rem;
+    padding: 1rem 2rem 4rem 2rem;
 }
 .tetimonial_quote i{
     font-size: 2rem;
 }
 
 /* for swiper plugin */
-.swiper-container{
-    overflow: visible;
-}
 #testimonial .swiper-pagination .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
@@ -994,20 +997,23 @@ margin: 10rem 0;
 #testimonial .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--prymary-color);
 }
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: -35px;
-    left: 0;
-    width: 100%;
-}
 
 /* Responsive code for testimonial section */
 @media screen and (max-width:484px) {
     .testimonial_item_header{
         flex-direction: column;
     }
-    .testimonial-item{
-    margin-right: -1rem;
-    width: 80vw;
+    .testimonial_slider {
+        margin: 3rem 0rem;
+    }
+    .tetimonial_quote {
+        padding: 1rem 0 4rem 0;
+    }
+    .testimonial_para_for_mobile{
+        display: block;
+    }
+    .testimonial_para{
+        display: none;
     }
 }
 /* ============================================================================

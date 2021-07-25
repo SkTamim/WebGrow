@@ -167,10 +167,7 @@ $(document).ready(function() {
 new Swiper('.testimonial_slider', {
   speed: 400,
   loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false
-  },
+  autoplay:true,
   slidesPerView: 'auto',
   pagination: {
     el: '.swiper-pagination',

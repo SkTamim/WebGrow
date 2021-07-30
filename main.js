@@ -177,3 +177,33 @@ new Swiper('.testimonial_slider', {
 });
 
 
+// Accordion inisializition for FAQ section 
+$(document).ready(function() {
+  $('.faq_accordion [data-accordion]').accordion();
+});
+
+  // Chenging the arrow icon to Plus icon of accordion 
+  let accordion_button = document.querySelectorAll(".accordion_button");
+    let accordion_item = document.querySelectorAll(".accordion_item");
+
+    accordion_button.forEach( function(index){
+        index.addEventListener('click', clickFun)
+    });
+
+    function clickFun(e) {
+        var className =  this.childNodes[1].classList;
+        if (className[1] == "fa-angle-down") {
+            className.replace('fa-angle-down' , 'fa-times');
+        } else{
+            className.replace('fa-times' , 'fa-angle-down');
+        }
+       accordion_item.forEach(function (acValue,acIndex,acArray) {
+            if(acArray[acIndex].classList.length == 2){
+            acValue.childNodes[1].childNodes[1].classList.replace('fa-times' , 'fa-angle-down')
+            }
+        });  
+    }
+
+
+  
+  

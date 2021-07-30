@@ -1156,6 +1156,78 @@ margin: 10rem 0;
 ================================================================================= */
 
 
+/* ============================================================================
+                                FAQ Section Start 
+================================================================================= */
+#faq{
+    margin: 13rem 0 8rem 0;
+}
+
+.faq_heading{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;  
+    margin: 5rem 0;
+}
+.faq_heading::after{
+    content: "";
+    background: var(--prymary-color);
+    height: 0.3rem;
+    width: 5rem;
+    position: absolute;
+    top: 5rem;
+    left: calc(50% - 25px);
+}
+/* Styling Accordion */
+.faq_accordion {
+    margin: 0 7rem;
+    font-size: 1.8rem;
+}
+.accordion_button{
+    cursor: pointer;
+    color: #383838;
+    transition: 0.3s;
+    display: flex;
+    margin: 1rem 0;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+}
+.fa-times {
+    font-size: 1.5rem;
+}
+.accordion_button i{
+    margin-left: auto;
+    transition: 0.3s linear;
+}
+.accordion_button:hover{
+    color: var(--prymary-color);
+}
+.accordion_content p{
+    font-size: 1.4rem;
+    color: #555555;
+    line-height: 2rem;
+}
+
+/* Responsive code for FAQ section */
+@media screen and (max-width:648px) {
+    .faq_heading{
+        margin: 5rem 3rem;
+    }
+    .faq_accordion {
+        margin: 0 3rem;
+    }
+}
+@media screen and (max-width:467px) {
+    .faq_heading::after{
+        top: 9.5rem;
+    }
+}
+/* ============================================================================
+                                FAQ Section End 
+================================================================================= */
+
+
+
 
 
 

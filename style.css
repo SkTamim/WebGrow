@@ -1277,6 +1277,7 @@ margin: 10rem 0;
     width: 25rem;
     position: relative;
     margin: 2rem 1.5rem;
+    transition: 0.3s;
 }
 .team_card img{
     border-top-left-radius: 0.5rem;
@@ -1315,7 +1316,7 @@ margin: 10rem 0;
 
 @keyframes social{
     0%{
-        bottom:0;
+        bottom:5rem;
     }
     100%{
         bottom:10rem;
@@ -1337,6 +1338,10 @@ margin: 10rem 0;
 .team_social i:hover{
     background: var(--prymary-bg);
 }
+.team_card:hover{
+ transform: scale(1.05);
+  
+}
 .team_card:hover .team_social{
      display: flex;
 }
@@ -1344,6 +1349,167 @@ margin: 10rem 0;
                                 Our Team Section End 
 ================================================================================= */
 
+
+/* ============================================================================
+                                Contact Us Section Start 
+================================================================================= */
+.contact_heading{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;  
+    margin: 2rem 0;
+}
+.contact_heading::after{
+    content: "";
+    background: var(--prymary-color);
+    height: 0.3rem;
+    width: 5rem;
+    position: absolute;
+    top: 5rem;
+    left: calc(50% - 25px);
+}
+.contact_para{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
+}
+.contact_item_boxes{
+    margin: 2rem 8rem;
+    display: flex;
+}
+.contact_item_heading{
+    font-size: 1.8rem;
+    color: #686868;
+    padding: 1rem 0;
+}
+.contact_item_para{
+    font-size: 1.3rem;
+    color: #777777;
+}
+.left_box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.left_box i{
+   font-size: 2.5rem;
+   padding: 1rem;
+   color: var(--prymary-color);
+   border: 2px dotted #e03a3d69;
+   border-radius: 50%;
+}
+.left_box .address_box{
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    border-radius: 0.4rem;
+}
+.inner_left_box{
+    display: flex;
+    margin-top: 2rem;
+}
+.inner_left_box > div{
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    border-radius: 0.4rem;
+    width: 50%;
+}
+.email_box{
+    margin-right: 1rem;
+}
+.call_box{
+    margin-left: 1rem;
+}
+.contact_form{
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 2rem;
+    padding: 2.5rem;
+}
+.contact_form > div{
+    display: flex;
+}
+.contact_form > div input{
+    width: 48%;
+}
+.contact_form > div input:last-child{
+    margin-left: auto;
+}
+.contact_form input,textarea{
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid  #929292;
+    color: #686868;
+    border-radius: 0.3rem;
+}
+.contact_form input:focus,textarea:focus{
+    outline: none !important;
+    border-color: #3b3b3b;
+}
+.contact_form textarea{
+    resize: vertical;
+}
+.contact_form input[type="button"]{
+    margin: auto;
+    padding: 1.3rem 2.3em;
+    background: var(--prymary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact_form input[type="button"]:hover{
+    background: var(--prymary-bg);
+}
+
+/* Responsive code for Contact section */
+@media screen and (max-width:900px) {
+    .contact_item_boxes{
+        margin: 2rem 3rem;
+    }
+}
+@media screen and (max-width:788px) {
+    .contact_item_boxes{
+        flex-direction: column;
+    }
+    .left_box{
+        width: 100%;
+    }
+    .contact_form{
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
+@media screen and (max-width:485px) {
+    .inner_left_box{
+        flex-direction: column;
+    }
+    .inner_left_box > div{
+        width: 100%;
+    }
+    .call_box{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .contact_form > div {
+        flex-direction: column;
+    }
+    .contact_form > div input {
+        width: 100%;
+    }
+}
+/* ============================================================================
+                                Contact Us Section End 
+================================================================================= */
 
 
 

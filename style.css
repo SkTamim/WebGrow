@@ -1511,7 +1511,196 @@ margin: 10rem 0;
                                 Contact Us Section End 
 ================================================================================= */
 
+/* ============================================================================
+                                Footer Section Start 
+================================================================================= */
+footer{
+    background: var(--prymary-bg);
+    color: #fff;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 8rem;
+}
+footer a{
+    color: #fff;
+}
+footer ul li{
+    list-style: none;
+}
 
+.branding p{
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    padding-bottom: 2rem;
+}
+.branding strong{
+    font-size: 1.2rem;
+}
+.branding span{
+    font-size: 1.2rem;
+}
+.branding .logo{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.branding .logo span{
+    font-size: 3rem;
+    color: var(--prymary-color);
+}
+
+footer h2{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    position: relative;
+}
+footer h2::after{
+    content: "";
+    background: var(--prymary-color);
+    display: block;
+    position: absolute;
+    height: 0.2rem;
+    width: 3rem;
+    bottom: 0;
+    left: 0;
+}
+footer ul{
+    padding: 1rem 0;
+}
+footer li i{
+    padding: 0.3rem 0;
+    padding-right: 0.4rem;
+}
+footer li a{
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 0.5rem 0;
+    color: rgba(238, 238, 238, 0.534);
+    transition: 0.3s;
+}
+footer li a:hover{
+    color: #fff;
+}
+
+/* Newsletter */
+.newsletter p{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+.newsletter input{
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid  transparent;
+    border-radius: 0.4rem;
+}
+.newsletter input[type="email"]{
+    padding-right: 2rem;
+}
+.newsletter input[type="button"]{
+    cursor: pointer;
+    position: relative;
+    left: -1rem;
+    background: var(--prymary-color);
+    color: #fff;
+    transition: 0.3s;
+    border-width:0 !important;
+    padding: 1.11rem;
+}
+.newsletter input[type="button"]:hover{
+    background: rgb(189, 189, 189);
+    color: rgb(99, 98, 98);
+}
+.newsletter input:focus{
+    outline: none !important;
+    border-width: 1px;
+    border-color:var(--prymary-color);
+}
+
+/* Social Icons */
+.footer_socail_icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+    width: 32rem;
+}
+.footer_socail_icon a{
+    font-size: 1.6rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(68, 68, 68, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+}
+.footer_socail_icon a:hover{
+    background: var(--prymary-color);
+}
+
+
+/* Copright Section */
+.copyright {
+    font-size: 1.3rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.copyright p{
+    line-height: 2.5rem;
+}
+.copyright a{
+    color: rgba(202, 202, 202, 0.616);
+    transition: 0.3s;
+}
+.copyright a:hover{
+    color: var(--prymary-color);
+}
+
+
+/* Responsive code for Footer section */
+@media screen and (max-width:948px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media screen and (max-width:731px) {
+    footer{
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 3rem 3rem;
+    }
+    footer h2::after {
+        /* left: calc(50% - 1.5rem); */
+    }
+    footer > div{
+        /* margin: 1rem 0; */
+        margin-bottom: 1rem;
+    }
+    .newsletter input[type="button"] {
+        /* left: 0rem; */
+    }
+}
+@media screen and (max-width:360px) {
+    .newsletter input[type="email"] {
+        width: 100%;
+    }
+    .newsletter input[type="button"] {
+        left: 0rem;
+        width: 100%;
+        margin: auto;
+    }
+    .footer_socail_icon{
+        width: auto;
+    }
+}
+/* ============================================================================
+                                Footer Section Start 
+================================================================================= */
 
 
 

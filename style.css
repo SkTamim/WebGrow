@@ -5,6 +5,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -1695,6 +1696,37 @@ footer li a:hover{
                                 Footer Section Start 
 ================================================================================= */
 
+
+/* Back to Top Button Start*/
+.back_to_top{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    background: var(--prymary-color);
+    color: #fff;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    transition: 0.4s;
+    display: none;
+    animation: bTop 1s 1;
+}
+.back_to_top:hover{
+    background: #f7585b;
+}
+@keyframes bTop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Back to Top Button End*/
 
 
 /*=================================================================

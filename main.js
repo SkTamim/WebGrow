@@ -210,6 +210,18 @@ $(document).ready(function() {
     duration: 1500,
     delay: 500
   });
+
+
+// Back to Top Button
+let back_to_top = document.querySelector('.back_to_top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300){
+    back_to_top.style.display = "flex";
+  }else{
+    back_to_top.style.display = "none";
+  }
+});
   
 
 

@@ -1277,7 +1277,7 @@ margin: 10rem 0;
     width: 25rem;
     position: relative;
     margin: 2rem 1.5rem;
-    transition: 0.3s;
+    transition: 0.3s !important;
 }
 .team_card img{
     border-top-left-radius: 0.5rem;
@@ -1339,7 +1339,7 @@ margin: 10rem 0;
     background: var(--prymary-bg);
 }
 .team_card:hover{
- transform: scale(1.05);
+ transform: scale(1.05) !important;
   
 }
 .team_card:hover .team_social{
@@ -1674,15 +1674,8 @@ footer li a:hover{
         justify-content: center;
         padding: 3rem 3rem;
     }
-    footer h2::after {
-        /* left: calc(50% - 1.5rem); */
-    }
     footer > div{
-        /* margin: 1rem 0; */
         margin-bottom: 1rem;
-    }
-    .newsletter input[type="button"] {
-        /* left: 0rem; */
     }
 }
 @media screen and (max-width:360px) {
